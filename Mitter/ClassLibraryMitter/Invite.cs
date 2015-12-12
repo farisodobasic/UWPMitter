@@ -96,6 +96,7 @@ namespace ClassLibraryMitter
             try
             {
                 Invite newInvite = new Invite( _toSend, _newMeet);
+                _toSend.Invites.Add(newInvite);
                 return newInvite;
             }
             catch (Exception)
